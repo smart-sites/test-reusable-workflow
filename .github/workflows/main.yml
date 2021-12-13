@@ -1,0 +1,15 @@
+on: [ push ]
+
+jobs:
+  run_psi:
+    runs-on: ubuntu-latest
+    name: Test reusable workflow
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Echo ${{ env.FIRST_PHRASE }}
+        run: |
+          echo ${{ env.FIRST_PHRASE }}
+      - name: Echo ${{ env.SECOND_PHRASE }}
+        run: |
+          echo ${{ env.SECOND_PHRASE }}
