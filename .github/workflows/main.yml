@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
-      - name: Echo ${{ env.FIRST_PHRASE }}
+      - name: Echo ${{ inputs.FIRST_PHRASE }}
         run: |
-          echo ${{ env.FIRST_PHRASE }}
-      - name: Echo ${{ env.SECOND_PHRASE }}
+          echo ${{ inputs.FIRST_PHRASE }}
+      - name: Echo ${{ inputs.SECOND_PHRASE }}
         run: |
-          echo ${{ env.SECOND_PHRASE }}
+          echo ${{ inputs.SECOND_PHRASE }}
