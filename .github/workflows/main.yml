@@ -1,5 +1,12 @@
 on: 
   workflow_call:
+    inputs:
+      FIRST_PHRASE:
+        type: string
+        required: true
+      SECOND_PHRASE:
+        type: string
+        required: true  
 
 jobs:
   run_psi:
