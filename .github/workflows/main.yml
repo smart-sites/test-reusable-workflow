@@ -1,4 +1,5 @@
-on: [ push ]
+on: 
+  workflow_run:
 
 jobs:
   run_psi:
